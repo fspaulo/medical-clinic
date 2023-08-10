@@ -1,6 +1,5 @@
 package com.system.medicalClinic.controller;
 
-import com.system.medicalClinic.bussiness.PersonBusiness;
 import com.system.medicalClinic.model.Person;
 import com.system.medicalClinic.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,10 +7,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.ejb.EJB;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("v1/person")
 public class PersonController {
